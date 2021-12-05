@@ -1,23 +1,27 @@
 import 'package:flutter/material.dart';
-import 'package:learning_flutter/home_page.dart';
+import 'package:learning_flutter/pages/home_page.dart';
+import 'package:learning_flutter/pages/login_page.dart';
 
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
-    
-
-    
-    const pi = 3.14; //unchanged value
-   
-
     return MaterialApp(
-        home: HomePage(),
+      // home: HomePage(), (works as route)
+      themeMode: ThemeMode.light,
+      theme: ThemeData(primarySwatch: Colors.green),
+      darkTheme: ThemeData(
+        brightness: Brightness.light,
+      ),
+      initialRoute: "/home",
+      routes: {
+        "/": (context) => new LoginPage(),
+        "/home": (context) => HomePage(),
+        "/login": (context) => LoginPage(),
+      },
     );
   }
 }
