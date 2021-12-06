@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learning_flutter/pages/home_page.dart';
 import 'package:learning_flutter/pages/login_page.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:learning_flutter/utilities/routes.dart';
 
 void main() {
@@ -16,7 +15,6 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.light,
       theme: ThemeData(
         primarySwatch: Colors.green,
-        fontFamily: GoogleFonts.lato().fontFamily,
       ),
       debugShowCheckedModeBanner: false,
 
