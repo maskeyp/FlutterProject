@@ -9,9 +9,14 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Welcome to Ekrishi"),
+        title: Text(
+          " Ekrishi",
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            color: Colors.black,
+          ),
+        ),
       ),
-        
       body: Center(
         child: Container(
           child: Text("Welcome to $days days of flutter by $name"),

@@ -98,17 +98,17 @@ class _LoginPageState extends State<LoginPage> {
                       color: Colors.green,
                       borderRadius:
                           BorderRadius.circular(changeButton ? 50 : 8),
-                      child: InkWell(
-                        onTap: () => moveToHome(context),
-                        child: AnimatedContainer(
-                          duration: Duration(seconds: 1),
-                          width: changeButton ? 50 : 150,
-                          height: 50,
-                          alignment: Alignment.center,
-                          child: changeButton
-                              ? Icon(
-                                  Icons.done,
-                                  color: Colors.white,
+  child: InkWell(
+  onTap: () => moveToHome(context),
+    child: AnimatedContainer(
+      duration: Duration(seconds: 1),
+          width: changeButton ? 50 : 150,
+          height: 50,
+          alignment: Alignment.center,
+          child: changeButton
+          ? Icon(
+          Icons.done,
+           color: Colors.white,
                                 )
                               : Text(
                                   "Login",
